@@ -1,0 +1,221 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #f1f3f4;
+    font-family: sans-serif;
+}
+
+.top-nav-bar{
+    height: 57px;
+    top: 0;
+    position: sticky;
+    margin-bottom: 10px;
+    border-bottom: 3px solid orange;
+    z-index: 2;
+}
+.logo{
+    height: 40px;
+    margin: 5px 10px;
+}
+.form-control{
+    margin-top: 9px;
+    margin-left: 30px;
+    border: 1px solid orange !important;
+    border-top-left-radius: 20px !important;
+    border-bottom-left-radius: 20px !important;
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+    box-shadow: none !important;
+    height: 38px !important; 
+}
+.input-group-text{
+    background: orange;
+    margin: 8.5px 10px 3px 0;
+    border: 1px solid orange !important;
+    border-top-left-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
+    border-top-right-radius: 20px !important;
+    border-bottom-right-radius: 20px !important;
+    cursor: pointer;
+}
+.input-group-text .fa-solid{
+    color: white;
+}
+
+.search-box{
+    display: inline-flex;
+    width: 60%;
+}
+
+.menu-bar{
+    width: 40%;
+    height: 57px;
+    float: right;
+}
+.menu-bar ul{
+    display: inline-flex;
+    list-style: none;
+    float: right;
+}
+
+.menu-bar ul li{
+    list-style-type: none;
+    padding: 15px 35px;
+    text-align: center;
+}
+.menu-bar ul li a{
+    text-decoration: none;
+    font-size: 16px;
+    color: #222;
+    font-weight: bold;
+}
+.menu-bar a:is(:hover, :focus){
+    color: orange;
+    transition: 0.5s;
+}
+
+/* --------side-menu -----------*/
+.side-menu{
+    height: 562px;
+    width: 15%;
+    font-size: 13px;
+    float: left;
+    z-index: 2;
+    background-color: #ddd;
+}
+
+.side-menu ul li{
+    list-style: none;
+    font-weight: bold;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.side-menu li:is(:hover, :focus){
+    color: orange;
+}
+
+.side-menu ul li ul {
+    display: none;
+    z-index: 10;
+    top: 68px;
+}
+
+.side-menu ul li:hover ul{
+    display: block;
+    height: 400px;
+    margin-left: 13%;
+    padding: 0 100px 10px 10px;
+    position: fixed;
+    background: #ececec;
+    box-shadow: 1px 1px 4px 1px rgb(0, 0, 0.4);
+}
+
+.fa-angle-right{
+    margin-top: 4px;
+    margin-right: 8px;
+    float: right;
+}
+
+#menu-btn ,#close-btn{
+    font-size: 30px;
+    color: orange;
+    margin: 10px;
+    display: none;
+}
+
+/* slide css */
+.slider{
+    width: 85%;
+    margin-left: 15%;
+    padding: 0 10px;
+}
+.carousel{
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+}
+.carousel-indicators{
+    z-index: 1 !important;
+}
+
+.slider .main-img{
+    height: 562px;
+}
+
+/* responsive */
+
+@media only screen and (max-width: 980px){
+    .top-nav-bar{
+        height: 118px;
+        border-bottom: 0;
+    }
+    .search-box{
+        width: 100%;
+    }
+    .menu-bar{
+        width: 100%;
+    }
+    .menu-bar ul{
+        margin: 10px 10px;
+        width: 100%;
+    }
+    .menu-bar ul li{
+        height: 57px;
+        width: 100%;
+        background-color: rgb(226, 218, 203);
+    }
+
+
+    /* side-menu css*/
+    .side-menu{
+        width: 34%;
+        z-index: 20;
+        top: 125px;
+        position: fixed;
+        font-size: 12px;
+        background: #f1f3f4;
+
+        display: none;
+    }
+    
+    .side-menu ul li ul{
+        top: 125px;
+    }
+    .side-menu ul li:hover ul{
+        margin-left: 30%;
+    }
+
+    #menu-btn, #close-btn{
+        display: block;
+    }
+    #menu-btn ,#close-btn{
+        width: 6%;
+    }
+
+    /* slide css */
+    .slider{
+        width: 100%;
+        margin-left: 0;
+    }
+    .slider .main-img{
+        height: 365px;
+    }
+    .side-menu{
+        height: 366px;
+    }
+
+}
+
+ /* md applies to small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) { 
+    .side-menu ul li:hover ul{
+        margin-left: 28%;
+    }
+    .slider .main-img{
+        height: 363px;
+    }
+    .side-menu{
+        font-size: 11px;
+    }
+}
