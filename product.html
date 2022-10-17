@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- main css link -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="top-nav-bar">
+        <div class="search-box">
+            <i class="fa-solid fa-bars" id="menu-btn"></i>
+            <i class="fa-solid fa-times" id="close-btn"></i>
+             
+            <img class="logo" src="./image/log.png" alt="">
+            <input type="text" class="form-control">
+            <span class="input-group-text">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </span>
+        </div>
+
+        <div class="menu-bar">
+            <ul>
+                <li><a href="#"> <i class="fa-solid fa-bag-shopping"></i> Cart</a></li>
+                <li><a href="#">Sign Up</a></li>
+                <li><a href="#">Log In</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- singgle product -->
+    <div class="single-product py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-5">
+
+                    <div id="product-slider" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="https://static-01.daraz.com.bd/p/d741b091cbb1315c1af6ca9be58df98b.jpg" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="https://static-01.daraz.com.bd/p/3a034a94f42cbe3a763c52738d550cb9.jpg" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="https://static-01.daraz.com.bd/p/d741b091cbb1315c1af6ca9be58df98b.jpg" class="d-block w-100" alt="...">
+                          </div>
+                        </div>
+
+                        <button class="carousel-control-prev" type="button" data-bs-target="#product-slider" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                          </button>
+                          <button class="carousel-control-next" type="button" data-bs-target="#product-slider" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                          </button>
+            
+                    </div>
+                </div>
+
+                <div class="col-xl-7">
+                    <p class="text-center new-arrival">NEW</p>
+                    <h2>Men`s T Shirts V Neck - Blue Color</h2>
+                    <p>Product Code: IRSC255</p>
+
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half"></i>
+
+                    <p class="price">$15.00</p>
+                    <p> <b>Availability:</b> In Stock </p>
+                    <p> <b>Condition:</b> New </p>
+                    <p> <b>Brand:</b> Easy Company </p>
+                    <label>Quantity:</label>
+                    <input type="text" value="1">
+                    <button class="btn btn-primary">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- product description -->
+    <div class="container prodct-description">
+        <h6>product Description</h6>
+        <p class="description-text">
+            Type: Full Sleeve
+            Fabric: Taiwan CVC Fabric.
+            Fabric GSM: 165-170.
+            100% Export Quality and 100% Quality control T-Shirt.
+            T-Shirt Measurement: Asian and Regular Fit.
+            Quality: Vector Brand original T-Shirt.
+            Status: Comfortable and Fashionable Exclusive T-shirt.
+            Size: S, M, L, XL, XXL
+            Size: S=Long-26, Chest-34
+            M=Long-27, Chest-36
+            L=Long-28, Chest-38
+            XL=Long-29, Chest-40.
+            XL=Long-30, Chest-42.
+        </p>
+        <hr>
+    </div>
+
+    <!-- Similar -->
+
+    <section class="py-5">
+        <div class="container">
+            <div class="title-box">
+                <h2>Similar</h2>
+            </div>
+
+            <div class="row">
+            <div class="col-md-3">
+                    <div class="product-top">
+                        <div class="block-inner">
+                            <div class="product-top">
+                                <img src="https://static-01.daraz.com.bd/p/48710bfe2583548cb5fe864771832cb8.jpg_200x200q80-product.jpg_.webp" alt="">
+    
+                                <div class="overlay-right">
+                                    <button class="btn btn-secondary">
+                                        <i class="fa fa-eye"></i>
+                                    </button>
+                                    <button class="btn btn-secondary">
+                                        <i class="fa fa-heart"></i>
+                                    </button>
+                                    <button class="btn btn-secondary">
+                                        <i class="fa fa-shopping-cart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    
+
+                    <div class="product-bottom text-center">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half"></i>
+                        <h3>Mobile Charging</h3>
+                        <h5>40$</h5>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-md-3">
+                <div class="product-top">
+                    <div class="block-inner">
+                        <div class="product-top">
+                            <img src="https://static-01.daraz.com.bd/p/55c4bcc39a53dedf2593f5a5bd0d0055.jpg_200x200q80-product.jpg_.webp" alt="">
+
+                            <div class="overlay-right">
+                                <button class="btn btn-secondary">
+                                    <i class="fa fa-eye"></i>
+                                </button>
+                                <button class="btn btn-secondary">
+                                    <i class="fa fa-heart"></i>
+                                </button>
+                                <button class="btn btn-secondary">
+                                    <i class="fa fa-shopping-cart"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                
+
+                <div class="product-bottom text-center">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half"></i>
+                    <h3>Realme C35</h3>
+                    <h5>30$</h5>
+                </div>
+            </div>
+
+            </div>
+
+            <div class="col-md-3">
+                <div class="product-top">
+                    <div class="block-inner">
+                        <div class="product-top">
+                            <img src="https://static-01.daraz.com.bd/p/687c9854be5c40a128485c6048410a11.jpg" alt="">
+
+                            <div class="overlay-right">
+                                <button class="btn btn-secondary">
+                                    <i class="fa fa-eye"></i>
+                                </button>
+                                <button class="btn btn-secondary">
+                                    <i class="fa fa-heart"></i>
+                                </button>
+                                <button class="btn btn-secondary">
+                                    <i class="fa fa-shopping-cart"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                
+
+                <div class="product-bottom text-center">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half"></i>
+                    <h3>Shirt for man</h3>
+                    <h5>40$</h5>
+                </div>
+            </div>
+
+            </div>
+
+            <div class="col-md-3">
+                        <div class="product-top">
+                            <div class="block-inner">
+                                <div class="product-top">
+                                    <img src="https://static-01.daraz.com.bd/p/ecc272705358724a37081dffe8f12377.jpg" alt="">
+        
+                                    <div class="overlay-right">
+                                        <button class="btn btn-secondary">
+                                            <i class="fa fa-eye"></i>
+                                        </button>
+                                        <button class="btn btn-secondary">
+                                            <i class="fa fa-heart"></i>
+                                        </button>
+                                        <button class="btn btn-secondary">
+                                            <i class="fa fa-shopping-cart"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        
+
+                        <div class="product-bottom text-center">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half"></i>
+                            <h3>Hoodies  for Men</h3>
+                            <h5>90$</h5>
+                        </div>
+                    </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+     <!-- footer section -->
+     <footer class="bg-black">
+
+        <div class="container py-4">
+            <div class="row">
+                <div class="col-xl-4">
+                    <div class="single-footer-area">
+                        <h2 class="ftr-title">ABOUT US</h2>
+                        <div class="template-logo-sc ftr">
+                           <a href="#"><img src="./image/log.png" alt="bottomlogo_opt-1"></a>
+                        </div>
+                        <p class="ftr-text">
+                           <strong>Daraz</strong>
+                           Experience Personalized Online Shopping in Bangladesh with Daraz.com.bd
+                        </p>
+                    </div>
+                </div>
+                <div class="col-xl-4">
+                    <div class="single-footer-area">
+                        <h2 class="ftr-title">OFFICIAL</h2>
+                        <ul class="ftr-nav">
+                           <li><a href="#">Login - Sign Up</a></li>
+                           <li><a href="#">Offers / Discounts</a></li>
+                           <li><a href="#">Terms & Condition</a></li>
+                           <li><a href="#">Privacy Policy</a></li>
+                        </ul>
+                     </div>
+                </div>
+                <div class="col-xl-4">
+                    <div class="single-footer-area">
+                        <h2 class="ftr-title">GET IN TOUCH</h2>
+                        <div class="contact-details">
+                           <div class="contact-single">
+                              <p class="text-white"><i class="fas fa-map-marker-alt mr-1"></i> House #108, Road #01, Station Road (Dhaka, Bangladesh
+                              </p>
+                           </div>
+                           <div class="contact-single">
+                             <p class="text-white"><i class="fa fa-phone mr-1" aria-hidden="true"></i> +88 017XXXXXXXX</p>
+                           </div>
+                           <div class="contact-single">
+                             <p class="text-white"> <i class="fa fa-envelope mr-1" aria-hidden="true"></i> contact@daraz.com</p>
+                           </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+     </footer>
+
+     <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>    
